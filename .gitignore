@@ -1,0 +1,176 @@
+#-------------------------
+# Operating Specific Junk Files
+#-------------------------
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# OS X Thumbnails
+._*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Linux
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+#-------------------------
+# Environment Files
+#-------------------------
+# These should never be under version control,
+# as it poses a security risk.
+.env
+.vagrant
+Vagrantfile
+
+#-------------------------
+# Temporary Files
+#-------------------------
+writable/cache/*
+!writable/cache/index.html
+
+writable/logs/*
+!writable/logs/index.html
+
+writable/session/*
+!writable/session/index.html
+
+writable/uploads/*
+!writable/uploads/index.html
+
+writable/debugbar/*
+!writable/debugbar/.gitkeep
+
+php_errors.log
+
+#-------------------------
+# User Guide Temp Files
+#-------------------------
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+#-------------------------
+# Test Files
+#-------------------------
+tests/coverage*
+
+# Don't save phpunit under version control.
+phpunit
+
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+
+#-------------------------
+# IDE / Development Files
+#-------------------------
+
+# Modules Testing
+_modules/*
+
+# phpenv local config
+.php-version
+
+# Jetbrains editors (PHPStorm, etc)
+.idea/
+*.iml
+
+# NetBeans
+/nbproject/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/nbactions.xml
+/nb-configuration.xml
+/.nb-gradle/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.phpintel
+/api/
+
+# Visual Studio Code
+.vscode/
+
+/results/
+/phpunit*.xml
+
+#-------------------------
+# ANVAR INMOBILIARIA - ARCHIVOS SENSIBLES
+#-------------------------
+
+# Credenciales de APIs y OAuth
+client_secret_*.json
+google_drive_tokens.json
+writable/google_drive_tokens.json*
+writable/client_secret_*.json
+
+# Sistema legacy completo (omitir toda la carpeta)
+administracion/
+
+# Base de datos sensibles
+*.sql
+database_*.sql
+
+# Archivos de respaldo y temporales del proyecto
+*.backup
+*.old
+*.tmp
+*.bak
+test_*.php
+debug_*.php
+cookies.txt
+
+# Archivos con credenciales sensibles (usar versiones .backup para GitHub)
+app/Libraries/HubSpotService.php
+app/Controllers/Public/RegistroClientesController.php
+
+# Documentos y archivos de proyecto
+*.pdf
+*.zip
+*.code-workspace
+nuevoanvar.code-workspace
+presupuesto_*.pdf
+
+# Scripts de migración sensibles
+scripts_migracion_*.sql
+cleanup_*.sql
+create_shield_*.sql
+
+# Fuentes y documentos generados
+writable/dompdf_fonts/*
+!writable/dompdf_fonts/.gitkeep
+writable/documentos/*
+!writable/documentos/.gitkeep
+writable/templates/*
+!writable/templates/.gitkeep

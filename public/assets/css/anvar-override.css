@@ -1,0 +1,75 @@
+/**
+ * ANVAR INMOBILIARIA - OVERRIDE ADMINLTE MÍNIMO
+ * Archivo: public/assets/css/anvar-override.css
+ * 
+ * IMPORTANTE: Este archivo contiene solo overrides mínimos para AdminLTE
+ * Los estilos de autenticación están en anvar-auth.css
+ */
+
+/* ========================================
+   VARIABLES TEMÁTICAS MÍNIMAS
+======================================== */
+:root {
+    --anvar-primary: #007bff;
+    --anvar-secondary: #6c757d;
+    --anvar-success: #28a745;
+    --anvar-warning: #ffc107;
+    --anvar-danger: #dc3545;
+    --anvar-info: #17a2b8;
+}
+
+/* ========================================
+   SIDEBAR: Solo colores temáticos necesarios
+======================================== */
+.sidebar-dark-primary .nav-treeview > .nav-item > .nav-link {
+    color: #c2c7d0 !important;
+}
+
+.sidebar-dark-primary .nav-treeview > .nav-item > .nav-link:hover {
+    background: rgba(0, 123, 255, 0.1) !important;
+    color: var(--anvar-primary) !important;
+}
+
+.sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active {
+    background: rgba(0, 123, 255, 0.2) !important;
+    color: var(--anvar-primary) !important;
+}
+
+/* ========================================
+   BRAND LOGO: Solo colores temáticos
+======================================== */
+.brand-text {
+    color: var(--anvar-primary) !important;
+    font-weight: 700 !important;
+}
+
+/* ========================================
+   MEJORAS MENORES DE UX
+======================================== */
+
+/* Mejorar transiciones suaves */
+.nav-link, .btn, .card {
+    transition: all 0.2s ease !important;
+}
+
+/* Mejorar hover en botones */
+.btn:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Mejorar cards con sombra sutil */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Responsive: ocultar texto en móviles si es necesario */
+@media (max-width: 768px) {
+    .sidebar-mini.sidebar-collapse .nav-sidebar .nav-link p {
+        display: none !important;
+    }
+}

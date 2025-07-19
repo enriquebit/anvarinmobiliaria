@@ -1,0 +1,362 @@
+/**
+ * ANVAR INMOBILIARIA - ESTILOS DE AUTENTICACIÓN
+ * Archivo: public/assets/css/anvar-auth.css
+ * 
+ * IMPORTANTE: Este archivo solo se carga en páginas de autenticación:
+ * - Login
+ * - Register  
+ * - Recovery
+ * - Magic Link
+ */
+
+/* ========================================
+   VARIABLES - TEMA DORADO Y NEGRO
+======================================== */
+:root {
+    --gold-primary: #FFD700;
+    --gold-dark: #B8860B;
+    --gold-light: #FFF8DC;
+    --gold-metallic: #D4AF37;
+    --black-primary: #000000;
+    --black-soft: #1a1a1a;
+    --black-card: #2d2d2d;
+    --shadow-gold: rgba(255, 215, 0, 0.2);
+    --shadow-black: rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   PÁGINA DE LOGIN/REGISTER
+======================================== */
+.login-page, .register-page {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%) !important;
+    min-height: 100vh !important;
+    padding: 15px !important;
+}
+
+.login-box, .register-box {
+    width: 100% !important;
+    max-width: 400px !important;
+    margin: 0 auto !important;
+    padding: 20px 0 !important;
+}
+
+@media (min-width: 768px) {
+    .login-box, .register-box {
+        padding-top: 5vh !important;
+        max-width: 450px !important;
+    }
+}
+
+/* ========================================
+   CARDS DE AUTENTICACIÓN
+======================================== */
+.login-page .card, 
+.register-page .card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%) !important;
+    border: 2px solid var(--gold-metallic) !important;
+    border-radius: 15px !important;
+    box-shadow: 
+        0 15px 35px var(--shadow-black),
+        0 0 20px var(--shadow-gold) !important;
+    margin-bottom: 20px !important;
+}
+
+.login-page .card-header,
+.register-page .card-header {
+    background: transparent !important;
+    border-bottom: 2px solid var(--gold-metallic) !important;
+    text-align: center !important;
+    padding: 20px 20px 15px !important;
+}
+
+.login-logo {
+    margin-bottom: 10px !important;
+}
+
+.login-logo img {
+    max-width: 100px !important;
+    height: auto !important;
+    filter: drop-shadow(0 0 8px var(--shadow-gold)) !important;
+}
+
+.login-page .card-body,
+.register-page .card-body {
+    padding: 20px !important;
+    background: #ffffff !important;
+}
+
+@media (min-width: 768px) {
+    .login-page .card-header,
+    .register-page .card-header {
+        padding: 30px 30px 20px !important;
+    }
+    
+    .login-page .card-body,
+    .register-page .card-body {
+        padding: 30px !important;
+    }
+    
+    .login-logo img {
+        max-width: 120px !important;
+    }
+}
+
+/* ========================================
+   TÍTULOS DE AUTENTICACIÓN
+======================================== */
+.login-page h4,
+.register-page h4 {
+    color: var(--black-primary) !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    letter-spacing: 1px !important;
+    margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .login-page h4,
+    .register-page h4 {
+        font-size: 1.4rem !important;
+    }
+}
+
+.login-page .text-muted,
+.register-page .text-muted {
+    color: #6c757d !important;
+    opacity: 0.8 !important;
+    font-size: 0.9rem !important;
+}
+
+/* ========================================
+   BOTONES DE AUTENTICACIÓN
+======================================== */
+.login-page .btn-primary,
+.register-page .btn-primary {
+    background: linear-gradient(45deg, var(--gold-metallic) 0%, var(--gold-primary) 100%) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 30px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    color: var(--black-primary) !important;
+    font-size: 14px !important;
+    box-shadow: 0 4px 12px var(--shadow-gold) !important;
+    transition: all 0.2s ease !important;
+}
+
+.login-page .btn-primary:hover,
+.login-page .btn-primary:focus,
+.login-page .btn-primary:active,
+.register-page .btn-primary:hover,
+.register-page .btn-primary:focus,
+.register-page .btn-primary:active {
+    background: linear-gradient(45deg, var(--gold-primary) 0%, #FFED4E 100%) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px var(--shadow-gold) !important;
+    color: var(--black-primary) !important;
+    border-color: transparent !important;
+}
+
+.login-page .btn-primary:active,
+.register-page .btn-primary:active {
+    transform: translateY(0) !important;
+}
+
+/* ========================================
+   FORMULARIOS DE AUTENTICACIÓN
+======================================== */
+.login-page .form-control,
+.register-page .form-control {
+    background: #ffffff !important;
+    border: 2px solid #e9ecef !important;
+    border-radius: 8px !important;
+    padding: 12px 15px !important;
+    font-size: 14px !important;
+    color: var(--black-primary) !important;
+    transition: all 0.2s ease !important;
+}
+
+.login-page .form-control:focus,
+.register-page .form-control:focus {
+    background: #ffffff !important;
+    border-color: var(--gold-primary) !important;
+    box-shadow: 0 0 0 0.15rem var(--shadow-gold) !important;
+    outline: none !important;
+}
+
+.login-page .form-control::placeholder,
+.register-page .form-control::placeholder {
+    color: #6c757d !important;
+    opacity: 0.7 !important;
+}
+
+.login-page .input-group-text,
+.register-page .input-group-text {
+    background: var(--gold-metallic) !important;
+    border: 2px solid var(--gold-metallic) !important;
+    border-right: none !important;
+    border-radius: 8px 0 0 8px !important;
+    color: var(--black-primary) !important;
+}
+
+/* ========================================
+   ALERTAS DE AUTENTICACIÓN
+======================================== */
+.login-page .alert,
+.register-page .alert {
+    border-radius: 8px !important;
+    margin-bottom: 20px !important;
+    font-size: 14px !important;
+    border: 1px solid !important;
+}
+
+.login-page .alert-danger,
+.register-page .alert-danger {
+    background: rgba(220, 53, 69, 0.1) !important;
+    color: #ff6b6b !important;
+    border-color: #dc3545 !important;
+}
+
+.login-page .alert-success,
+.register-page .alert-success {
+    background: rgba(40, 167, 69, 0.1) !important;
+    color: #2ed573 !important;
+    border-color: #28a745 !important;
+}
+
+.login-page .alert.alert-info,
+.register-page .alert.alert-info {
+    background: rgba(212, 175, 55, 0.25) !important;
+    color: #000000 !important;
+    border: 2px solid var(--gold-metallic) !important;
+    border-radius: 8px !important;
+}
+
+/* ========================================
+   CHECKBOXES DE AUTENTICACIÓN
+======================================== */
+.login-page .icheck-primary input:checked ~ label::before,
+.register-page .icheck-primary input:checked ~ label::before {
+    background-color: var(--gold-primary) !important;
+    border-color: var(--gold-primary) !important;
+}
+
+.login-page .icheck-primary label,
+.register-page .icheck-primary label {
+    color: var(--black-primary) !important;
+}
+
+/* ========================================
+   LINKS DE AUTENTICACIÓN
+======================================== */
+.login-page a,
+.register-page a {
+    color: var(--gold-dark) !important;
+    transition: color 0.2s ease !important;
+    font-weight: 500 !important;
+}
+
+.login-page a:hover,
+.register-page a:hover {
+    color: var(--gold-primary) !important;
+    text-decoration: none !important;
+}
+
+.login-page .close,
+.register-page .close {
+    color: var(--gold-primary) !important;
+    opacity: 0.8 !important;
+}
+
+.login-page .close:hover,
+.register-page .close:hover {
+    color: var(--gold-light) !important;
+    opacity: 1 !important;
+}
+
+/* ========================================
+   ICONOS DE AUTENTICACIÓN
+======================================== */
+.login-page .fas,
+.register-page .fas {
+    color: var(--black-primary) !important;
+}
+
+/* Links en input groups - excepción */
+.login-page .input-group-text .fas,
+.register-page .input-group-text .fas {
+    color: var(--black-primary) !important;
+}
+
+/* ========================================
+   EFECTOS ESPECIALES
+======================================== */
+.login-logo img {
+    filter: drop-shadow(0 0 8px var(--shadow-gold)) !important;
+    transition: all 0.2s ease !important;
+}
+
+.login-logo img:hover {
+    filter: drop-shadow(0 0 12px var(--shadow-gold)) !important;
+    transform: scale(1.05) !important;
+}
+
+/* ========================================
+   RESPONSIVE PARA AUTENTICACIÓN
+======================================== */
+@media (max-width: 576px) {
+    .login-page .card,
+    .register-page .card {
+        margin: 10px !important;
+        border-radius: 10px !important;
+    }
+    
+    .login-page .card-body,
+    .register-page .card-body {
+        padding: 15px !important;
+    }
+    
+    .login-page h4,
+    .register-page h4 {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* ========================================
+   MAGIC LINK Y RECOVERY
+======================================== */
+.recovery-page,
+.magic-link-page {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%) !important;
+    min-height: 100vh !important;
+    padding: 15px !important;
+}
+
+.recovery-box,
+.magic-link-box {
+    width: 100% !important;
+    max-width: 400px !important;
+    margin: 0 auto !important;
+    padding: 20px 0 !important;
+}
+
+/* Aplicar todos los estilos de autenticación también a recovery y magic-link */
+.recovery-page .card,
+.magic-link-page .card,
+.recovery-page .card-header,
+.magic-link-page .card-header,
+.recovery-page .card-body,
+.magic-link-page .card-body,
+.recovery-page h4,
+.magic-link-page h4,
+.recovery-page .btn-primary,
+.magic-link-page .btn-primary,
+.recovery-page .form-control,
+.magic-link-page .form-control,
+.recovery-page .alert,
+.magic-link-page .alert,
+.recovery-page a,
+.magic-link-page a {
+    /* Heredar todos los estilos de login/register */
+}
