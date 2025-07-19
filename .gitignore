@@ -155,6 +155,10 @@ cookies.txt
 app/Libraries/HubSpotService.php
 app/Controllers/Public/RegistroClientesController.php
 
+# Documentación con credenciales
+docs/INSTRUCTIVO_MIGRACION.md
+docs/GOOGLE_DRIVE_INTEGRACION_EXITOSA.md
+
 # Documentos y archivos de proyecto
 *.pdf
 *.zip
